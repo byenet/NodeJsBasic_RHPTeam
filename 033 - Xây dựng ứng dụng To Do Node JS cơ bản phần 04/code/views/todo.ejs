@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do Application</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"
+        integrity="sha512-MHsjLsEcZhZUApST3ylHfvHPfgmLr6PQVfoU6ls2U2NwR0gByVL9AFnphNmOOwcS2pd40nqpGBF1Us4WWCnRcw=="
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css" /> 
+    <script src="/assets/todo-list.js"></script>
+
+</head>
+
+<body>
+    <div id="todo-table">
+        <form action="" id="contact-form" method="post">
+            <input type="text" name="item" placeholder="Add new work..." required>
+            <button type="submit">Add work</button>
+        </form>
+        <ul>
+            <% todos.map((todo)=> { %>
+                <li>
+                    <%= todo.item %>
+                </li>
+            <% }) %>
+        </ul>
+        
+    </div>
+</body>
+
+
+</html>
+

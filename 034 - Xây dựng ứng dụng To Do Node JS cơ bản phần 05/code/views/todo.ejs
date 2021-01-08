@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do Application</title>
+    <script src="/assets/jquery-3.x-git.min.js"></script>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css" /> 
+    <script src="/assets/todo-list.js"></script>
+
+</head>
+
+<body>
+    <div id="todo-table">
+        <form action="" id="contact-form" method="post">
+            <input type="text" name="item" placeholder="Add new work..." required>
+            <button type="submit">Add work</button>
+        </form>
+        <ul>
+            <% todos.map((todo)=> { %>
+                <li>
+                    <%= todo.item %>
+                </li>
+            <% }) %>
+        </ul>
+        
+    </div>
+</body>
+
+
+</html>
+
